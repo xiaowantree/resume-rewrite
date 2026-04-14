@@ -32,10 +32,13 @@ claude install-skill SKILL.md
 
 1. 打开 [claude.ai](https://claude.ai)，开始一个新对话
 2. 点击输入框左侧的 **附件按钮**（回形针图标）
-3. 上传 `SKILL.md` 文件
+3. 一次性上传以下 **3 个文件**：
+   - `SKILL.md` — 核心逻辑（必须）
+   - `references/terminology.md` — 术语对照表（改简历时需要）
+   - `references/interview-prep.md` — 面试押题框架（押题时需要）
 4. 直接开始对话，例如输入「帮我改简历」，然后粘贴你的 bullet points
 
-> 注意：网页版每次新对话都需要重新上传 SKILL.md。如果需要面试押题功能，还需一并上传 `references/interview-prep.md`。
+> 注意：网页版每次新对话都需要重新上传这 3 个文件。
 
 ## 触发方式
 
