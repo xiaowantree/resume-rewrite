@@ -12,7 +12,7 @@
 ## 下载
 
 ```bash
-git clone https://github.com/xiaowantree/resume-rewrite-skill.git
+git clone https://github.com/xiaowantree/skills.git
 ```
 
 ## 使用方式
@@ -22,7 +22,7 @@ git clone https://github.com/xiaowantree/resume-rewrite-skill.git
 通过命令行安装，安装后 Skill 永久生效，自动触发，无需每次手动上传：
 
 ```bash
-claude install-skill SKILL.md
+claude install-skill resume-rewrite.skill
 ```
 
 ### Claude 网页版（claude.ai）
@@ -31,10 +31,10 @@ claude install-skill SKILL.md
 
 1. 打开 [claude.ai](https://claude.ai)，开始一个新对话
 2. 点击输入框左侧的 **附件按钮**（回形针图标）
-3. 上传 `SKILL.md` 文件
+3. 上传 `resume-rewrite/SKILL.md` 文件
 4. 直接开始对话，例如输入「帮我改简历」，然后粘贴你的 bullet points
 
-> 注意：网页版每次新对话都需要重新上传 SKILL.md。如果需要面试押题功能，还需一并上传 `references/interview-prep.md`。
+> 注意：网页版每次新对话都需要重新上传 SKILL.md。如果需要面试押题功能，还需一并上传 `resume-rewrite/references/interview-prep.md`。
 
 ## 触发方式
 
@@ -47,9 +47,11 @@ claude install-skill SKILL.md
 ## 文件结构
 
 ```
-resume-rewrite-skill/
-├── SKILL.md                      ← 核心逻辑：入口路由、诊断规则、改写规则、输出格式
-└── references/
-    ├── terminology.md            ← HR 高频动词、术语翻译对照表、ATS 关键词清单
-    └── interview-prep.md         ← Thinking Process 故事框架、场景化面试出题模板
+skills/
+├── resume-rewrite.skill              ← 安装包（Claude Code 用）
+└── resume-rewrite/                   ← 源文件（可直接阅读 / 网页版上传用）
+    ├── SKILL.md                      ← 核心逻辑：入口路由、诊断规则、改写规则、输出格式
+    └── references/
+        ├── terminology.md            ← HR 高频动词、术语翻译对照表、ATS 关键词清单
+        └── interview-prep.md         ← Thinking Process 故事框架、场景化面试出题模板
 ```
