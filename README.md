@@ -1,4 +1,4 @@
-# Data Engineer Resume Copilot
+# data-engineer-resume-copilot skill
 
 一个 Claude Code Skill，帮 **Data Engineering** 求职者把简历从"职责描述"改写成"成就导向"，同时提供 JD 匹配和面试押题。
 
